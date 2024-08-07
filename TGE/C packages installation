@@ -1,0 +1,49 @@
+Documentation to install  cfitsio, fftw and gsl :
+
+1) For installing cfitsio :
+
+	(I) download the tar file from net
+	(II) then go to the directory where this tar file is located and run :
+				tar xf cfitsio-4.2.0.tar.gz
+				(note that you need to run tar -x or any other command depending on the tar file 
+				[to find the type of tar file, use : file cfitsio3140.tar.gz])
+	(III) change directory to cfitsio-4.2.0 (ie go to the new directory that is created) by typing :
+			cd cfitsio-4.2.0
+			./configure --prefix=/data/mwa/shouvik/astro/ (ie the path to the directory)
+	(IV) then type :
+				make
+	(V) and again type :
+				make install
+				
+2) For installing fftw :
+
+	cd .. [this command takes you back to astro directory]
+	tar xf fftw-3.3.10.tar.gz
+	cd fftw-3.3.10
+	
+	./configure --prefix=/data/mwa/shouvik/astro/
+	make
+	make install
+	
+	./configure --prefix=/data/mwa/shouvik/astro/ --enable-float
+	make
+	make install
+	
+	./configure --prefix=/data/mwa/shouvik/astro/ --enable-float --enable-openmp
+	make
+	make install
+	
+	./configure --prefix=/data/mwa/shouvik/astro/ --enable-openmp
+	make
+	make install
+	
+
+3) For installing gsl :
+
+	cd ..
+	tar xf gsl-2.7.tar.gz
+	cd gsl-2.7
+	./configure --prefix=/data/mwa/shouvik/astro/
+	make
+	make install
+
