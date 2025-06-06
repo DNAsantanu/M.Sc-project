@@ -62,7 +62,7 @@ Observing redshifted 21-cm radiation helps map these phases across cosmic time.
 
 - Arises from the spin-flip transition in neutral hydrogen.
 - Observed frequency:  
-  \( f_\text{observed} = \frac{1420}{1 + z} \) MHz
+   f_{observed} = 1420\(1 + z) MHz
 
 ### 📈 Visibility and Sky Image
 
